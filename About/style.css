@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background: #F9A826;
+    color: #472f18;
+}
+
+header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f3951d;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.logo-text {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.menu-icon {
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background: #f7a01f;
+    width: 100%;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 15px;
+}
+
+.mobile-menu a {
+    font-size: 22px;
+    color: white;
+}
+
+.mobile-menu.open {
+    display: flex;
+}
+
+.welcome {
+    text-align: center;
+    padding: 70px 20px;
+    margin-top: 65px;
+}
+
+.top-title {
+    font-size: 60px;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.stage-title {
+    font-size: 32px;
+    margin-top: 10px;
+    font-style: italic;
+    color: #fffbe9;
+}
+
+.hero {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-content {
+    max-width: 700px;
+    background: #ffffffdd;
+    padding: 30px 40px;
+    border-radius: 20px;
+    text-align: left;
+    line-height: 1.8;
+    font-size: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    margin-top: 100px;
+    background: #f3951d;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ieee-logo {
+    width: 300px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .top-title {
+        font-size: 45px;
+    }
+
+    .stage-title {
+        font-size: 22px;
+    }
+
+    .about-content {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .ieee-logo {
+        width: 180px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
